@@ -54,7 +54,7 @@ parser.add_argument('--eplen', type=int, default=100)
 parser.set_defaults(record=False)
 ```
 
-## 기본적으로 제공되는 Env
+## 기본적으로 제공되는 Env (SMAC_MAPS)
 | Name | Ally Units | Enemy Units | Type | Max Ep Len | 
 | :---: | :---: | :---: | :---:| :---: |
 | 3m | 3 Marines | 3 Marines | homogeneous & symmetric | 60 |
@@ -88,11 +88,12 @@ parser.set_defaults(record=False)
 4. 만약, 새로운 RL 유닛(탱크 등)이 생성되면 3rd_library/smac/smac/env/starcraft2/starcraft2.py 에 새로운 id 추가 필요
 5. 특히 2가지 이상의 유닛이 포함된 맵: _init_ally_unit_types() 함수에서 유닛 id 수동으로 설정
 
-'''
-기존 유닛 (아마도..?)
-marine_id, marauder_id, medivac_id, stalker_id, zealot_id, colossus_id, hydralisk_id,
-zergling_id, baneling_id
-'''
+
+> 기존 유닛들 (아마도..?)  
+> marine_id, marauder_id, medivac_id, stalker_id, zealot_id, colossus_id, hydralisk_id,
+> zergling_id, baneling_id  
+  
+
 ### 원문 README
 Users can extend SMAC by adding new maps/scenarios. To this end, one needs to:
 - Design a new map/scenario using StarCraft II Editor:
