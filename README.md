@@ -1,4 +1,4 @@
-# SMAC2Study
+# SMAC_MORL
 * [SMAC 정보 정리 notion(미완성)](https://certain-shaker-74f.notion.site/SMAC-d7824b06a41c432e9e6ba78279e2c3ec?pvs=4)
 ## StarCraft2 설치
 * https://github.com/oxwhirl/smac 참고
@@ -34,7 +34,7 @@ $ pip install -e .
 $ python algo/mppo/mppo.py --env 8m --eplen 120 --epochs 1000
 ```
 * python 상위 module의 import를 위해 sys.path.append를 해준다. (mppo.py line 12)
-* sys.path.append(os.path.join(os.environ['HOME'], 'SMAC2Study'))
+* sys.path.append(os.path.join(os.environ['HOME'], 'SMAC_MORL'))
 * 만약 이상한 pysc2 연결 에러 발생하면, StarCraft2 재설치
 * mppo는 문헌님이 짜신 알고리즘. 이런식으로 MORL 알고리즘도 추가하면 좋을것 같음
 
@@ -103,7 +103,7 @@ Users can extend SMAC by adding new maps/scenarios. To this end, one needs to:
 
 ## 결과물 예시
 ### 3m
-![](https://github.com/monhoney/SMAC2Study/blob/main/asset/3m.gif)
+![](https://github.com/monhoney/SMAC_MORL/blob/main/asset/3m.gif)
 
 ### 8m
-![](https://github.com/monhoney/SMAC2Study/blob/main/asset/8m.gif)
+![](https://github.com/monhoney/SMAC_MORL/blob/main/asset/8m.gif)
